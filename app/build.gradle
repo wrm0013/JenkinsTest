@@ -27,7 +27,15 @@ android {
         versionCode Integer.parseInt(APP_CODE)
         versionName APP_VERSION
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
+
+    sourceSets {
+        main {
+            jni.srcDirs = []
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
